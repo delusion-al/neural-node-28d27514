@@ -2,8 +2,8 @@
   "brand": {
     "font": "Inter",
     "colors": {
-      "primary": "#2E7D32",
-      "accent": "#81C784"
+      "accent": "#81C784",
+      "primary": "#2E7D32"
     },
     "logo_text": "Arbonaida"
   },
@@ -81,5 +81,5 @@
       "label": "Contacto"
     }
   ],
-  "updated_at": "2026-04-03T15:46:39.323Z"
+  "updated_at": "2026-04-03T17:01:43.756Z"
 }
