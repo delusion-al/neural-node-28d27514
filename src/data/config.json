@@ -2,64 +2,26 @@
   "brand": {
     "font": "Inter",
     "colors": {
-      "accent": "#81C784",
-      "primary": "#2E7D32"
+      "deepVoid": "hsl(230, 40%, 4%)",
+      "electricNeon": "hsl(260, 100%, 70%)",
+      "frostedSilver": "hsl(210, 20%, 90%)",
+      "glassTint": "hsl(230, 30%, 15% / 0.6)",
+      "successGlow": "hsl(150, 100%, 50%)"
     },
     "logo_text": "Arbonaida"
   },
   "seo": {
-    "title": "EcoStream Solutions | Sustainable Water Filtration Systems",
-    "description": "Leading the way in eco-friendly water filtration. Reduce plastic waste and ensure pure drinking water with our innovative home and industrial systems."
+    "title": "OPTI-LUXE | Hyper-SaaS Website Optimization Logic",
+    "description": "Experience the pinnacle of conversion engineering. OPTI-LUXE transforms digital interfaces into high-performance revenue engines using avant-garde UI/UX and precision optimization logic."
   },
   "pages": [
     {
       "id": "home",
-      "hero": {
-        "title": "Arbonaida",
-        "subtitle": "Tu experto local en restaurant en Madrid",
-        "button_text": "Reservar Cita"
-      },
-      "layout": "glassmorphism",
-      "contact": {
-        "email": "info@arbonaida.aifactory.dev",
-        "phone": "+34 639 50 00 68",
-        "address": "Calle de Santiago, 11, Madrid"
-      },
-      "pricing": [
-        {
-          "name": "Básico",
-          "price": "Económico",
-          "features": [
-            "Servicio estándar",
-            "Garantía 30 días"
-          ]
-        },
-        {
-          "name": "Premium",
-          "price": "Recomendado",
-          "features": [
-            "Prioridad máxima",
-            "Atención 24/7",
-            "Garantía extendida"
-          ]
-        }
-      ],
-      "features": [
-        {
-          "desc": "Priorizamos tu tiempo en Madrid.",
-          "icon": "Zap",
-          "title": "Atención Express"
-        },
-        {
-          "desc": "Seguridad y precisión en cada servicio de restaurant.",
-          "icon": "Shield",
-          "title": "Garantía Neural"
-        },
-        {
-          "desc": "Acabados y atención al detalle de alto nivel.",
-          "icon": "Star",
-          "title": "Calidad Premium"
-        }
+      "blocks": [
+        "HeroBento",
+        "LogicBento",
+        "GlassmorphicAudit",
+        "LeadConversionFooter"
       ]
     }
   ],
@@ -81,5 +43,5 @@
       "label": "Contacto"
     }
   ],
-  "updated_at": "2026-04-03T17:01:43.756Z"
+  "updated_at": "2026-04-03T21:20:41.491Z"
 }
