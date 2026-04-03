@@ -2,26 +2,25 @@
   "brand": {
     "font": "Inter",
     "colors": {
-      "deepVoid": "hsl(230, 40%, 4%)",
-      "electricNeon": "hsl(260, 100%, 70%)",
-      "frostedSilver": "hsl(210, 20%, 90%)",
-      "glassTint": "hsl(230, 30%, 15% / 0.6)",
-      "successGlow": "hsl(150, 100%, 50%)"
+      "primary": "#0F172A",
+      "accent": "#D4AF37",
+      "secondary": "#F8FAFC",
+      "glass": "rgba(255, 255, 255, 0.05)"
     },
     "logo_text": "Arbonaida"
   },
   "seo": {
-    "title": "OPTI-LUXE | Hyper-SaaS Website Optimization Logic",
-    "description": "Experience the pinnacle of conversion engineering. OPTI-LUXE transforms digital interfaces into high-performance revenue engines using avant-garde UI/UX and precision optimization logic."
+    "title": "ApexStructures | High-End Architectural & Structural Improvements",
+    "description": "Precision engineering meets luxury design. Transforming structural integrity into architectural masterpieces through sustainable, high-end innovation."
   },
   "pages": [
     {
       "id": "home",
       "blocks": [
-        "HeroBento",
-        "LogicBento",
-        "GlassmorphicAudit",
-        "LeadConversionFooter"
+        "KineticHero",
+        "BentoFeatureGrid",
+        "GlassmorphicCTA",
+        "PortfolioShowcase"
       ]
     }
   ],
@@ -43,5 +42,5 @@
       "label": "Contacto"
     }
   ],
-  "updated_at": "2026-04-03T21:20:41.491Z"
+  "updated_at": "2026-04-03T22:09:27.420Z"
 }
