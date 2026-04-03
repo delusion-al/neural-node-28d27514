@@ -1,133 +1,94 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const title = "ApexStructures | Engineering Luxury";
 ---
-<Layout title="OPTI-LUXE | Engineering High-Conversion Logic">
-  <main class="relative min-h-screen p-4 md:p-8 lg:p-12 space-y-24">
-    
-    <!-- HERO BENTO SECTION -->
-    <section class="grid grid-cols-1 md:grid-cols-4 grid-rows-auto gap-4 max-w-7xl mx-auto">
-      <!-- Main Cell: Kinetic Typography -->
-      <div class="md:col-span-3 md:row-span-2 glass-card rounded-3xl p-8 md:p-16 flex flex-col justify-center relative overflow-hidden group">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600/20 blur-[120px] rounded-full -mr-32 -mt-32"></div>
-        <h1 class="text-5xl md:text-8xl font-black leading-tight tracking-tighter mb-6">
-          <span class="kinetic-text block opacity-90">PRECISION</span>
-          <span class="glow-text text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-electric-neon">OPTIMIZATION</span>
-          <span class="kinetic-text block opacity-90">LOGIC.</span>
-        </h1>
-        <p class="text-lg md:text-2xl text-slate-400 max-w-2xl mb-8 font-light">
-          We don't just build websites. We engineer digital assets that convert traffic into high-ticket revenue through mathematical UI precision.
-        </p>
-        <div class="flex gap-4">
-          <button class="px-8 py-4 bg-electric-neon text-deep-void font-bold rounded-full hover:scale-105 transition-transform cursor-pointer">
-            Get Free Audit
-          </button>
-          <button class="px-8 py-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors">
-            View Case Studies
-          </button>
-        </div>
-      </div>
-
-      <!-- Side Cell: Live Ticker -->
-      <div class="glass-card rounded-3xl p-6 flex flex-col justify-between">
-        <span class="text-xs uppercase tracking-widest text-slate-500 font-bold">Global Avg. Lift</span>
-        <div class="text-4xl font-mono font-bold text-success-glow">
-          +142.8% <span class="text-sm">↑</span>
-        </div>
-        <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-          <div class="h-full bg-success-glow w-3/4 animate-pulse"></div>
-        </div>
-      </div>
-
-      <!-- Bottom Cell: Marquee -->
-      <div class="md:col-span-1 glass-card rounded-3xl p-6 flex items-center justify-center overflow-hidden">
-        <div class="flex gap-8 animate-marquee whitespace-nowrap opacity-50">
-          <span class="font-bold text-xl uppercase">Next.js</span>
-          <span class="font-bold text-xl uppercase">Vercel</span>
-          <span class="font-bold text-xl uppercase">Stripe</span>
-          <span class="font-bold text-xl uppercase">Tailwind</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- LOGIC BENTO SECTION -->
-    <section class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-6xl font-bold mb-4">The Logic Ecosystem</h2>
-        <p class="text-slate-400">Technical superiority translated into business growth.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Cell A: Speed Slider -->
-        <div class="md:col-span-2 glass-card rounded-3xl p-8 relative min-h-[400px] flex flex-col justify-between">
-          <div>
-            <h3 class="text-2xl font-bold mb-2">Latency Liquidation</h3>
-            <p class="text-slate-400">Reducing Time-to-Interactive to sub-500ms.</p>
-          </div>
-          <div class="relative w-full h-48 bg-white/5 rounded-xl overflow-hidden border border-white/10">
-            <div class="absolute inset-0 flex items-center justify-center text-slate-700 font-mono">[BEFORE: 4.2s]</div>
-            <div class="absolute inset-y-0 left-0 w-1/2 bg-electric-neon/20 border-r-2 border-electric-neon flex items-center justify-center text-electric-neon font-mono font-bold">
-              [AFTER: 0.4s]
+<Layout title={title}>
+    <main class="relative min-h-screen px-6 py-12 lg:px-24">
+        <!-- Kinetic Hero Section -->
+        <section class="relative h-[90vh] flex flex-col items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 -z-10">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500/10 rounded-full blur-[120px] animate-pulse" style="animation-delay: 2s"></div>
             </div>
-          </div>
-        </div>
-
-        <!-- Cell B: Conversion Lift -->
-        <div class="glass-card rounded-3xl p-8 flex flex-col justify-center text-center">
-          <div class="text-6xl font-black text-electric-neon mb-4">3.4x</div>
-          <p class="text-lg font-medium">Conversion Lift</p>
-          <p class="text-sm text-slate-500 mt-2">Average increase across SaaS lead-gen funnels.</p>
-        </div>
-
-        <!-- Cell C: Quick Wins -->
-        <div class="glass-card rounded-3xl p-8">
-          <h3 class="text-xl font-bold mb-6">Core Optimizations</h3>
-          <ul class="space-y-4">
-            {['LCP Reduction', 'CLS Stabilization', 'Hydration Tuning', 'Edge Caching'].map(item => (
-              <li class="flex items-center gap-3 text-slate-300">
-                <div class="w-2 h-2 rounded-full bg-success-glow"></div>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <!-- Cell D: Engine Preview -->
-        <div class="md:col-span-2 glass-card rounded-3xl p-8 flex items-center justify-center bg-gradient-to-br from-purple-900/20 to-transparent">
-          <div class="text-center">
-            <div class="w-20 h-20 bg-electric-neon rounded-full mx-auto mb-6 animate-bounce flex items-center justify-center">
-              <svg class="w-10 h-10 text-deep-void" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
+            
+            <h1 class="text-6xl lg:text-8xl font-['Playfair_Display'] font-bold leading-tight mb-6 opacity-0 translate-y-10 animate-fade-in-up">
+                Redefining <span class="text-gradient">Structural</span><br/>Perfection
+            </h1>
+            <p class="text-gray-400 text-lg lg:text-xl max-w-2xl mb-10 opacity-0 translate-y-10 animate-fade-in-up" style="animation-delay: 0.2s">
+                High-end structural improvements for the world's most ambitious architectural projects. Where precision engineering meets timeless luxury.
+            </p>
+            <div class="flex gap-4 opacity-0 translate-y-10 animate-fade-in-up" style="animation-delay: 0.4s">
+                <a href="#contact" class="px-8 py-4 bg-[#D4AF37] text-[#0F172A] font-bold rounded-full hover:scale-105 transition-transform duration-300">
+                    Start Your Project
+                </a>
+                <a href="#work" class="px-8 py-4 glass-card text-white font-semibold rounded-full hover:bg-white/10 transition-all">
+                    View Portfolio
+                </a>
             </div>
-            <h3 class="text-2xl font-bold">AI-Driven Analysis Engine</h3>
-            <p class="text-slate-400">Watch your site be dismantled and rebuilt for profit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- LEAD GEN SECTION -->
-    <section class="max-w-4xl mx-auto text-center py-24">
-      <div class="glass-card rounded-[4rem] p-12 md:p-24 relative overflow-hidden">
-        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-success-glow/20 blur-[100px] rounded-full"></div>
-        <h2 class="text-4xl md:text-6xl font-bold mb-8">Ready to scale?</h2>
-        <p class="text-xl text-slate-400 mb-12">Enter your URL for a comprehensive glassmorphic logic audit.</p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <input type="text" placeholder="https://your-site.com" class="px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white focus:border-electric-neon outline-none w-full md:w-96" />
-          <button class="px-8 py-4 bg-white text-deep-void font-bold rounded-full hover:bg-electric-neon transition-colors cursor-pointer">
-            Start Analysis
-          </button>
-        </div>
-      </div>
-    </section>
+        <!-- Bento Grid Features -->
+        <section class="py-24 max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-4">Engineering Excellence</h2>
+                <div class="w-20 h-1 bg-[#D4AF37] mx-auto"></div>
+            </div>
 
-  </main>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Large Bento Item -->
+                <div class="md:col-span-2 md:row-span-2 glass-card p-10 flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-opacity">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1">
+                            <path d="M3 21h18M3 7l9-4 9 4M4 7v14M20 7v14M12 3v18" />
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Advanced Load Dynamics</h3>
+                    <p class="text-gray-400 max-w-md">Utilizing AI-driven stress analysis to optimize structural integrity while maintaining an ethereal aesthetic.</p>
+                </div>
 
-  <style>
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-marquee {
-      animation: marquee 20s linear infinite;
-    }
-  </style>
+                <!-- Small Bento Item 1 -->
+                <div class="glass-card p-8 flex flex-col justify-center">
+                    <div class="text-[#D4AF37] mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Eco-Materials</h3>
+                    <p class="text-sm text-gray-400">Sustainable, aerospace-grade composites for longevity.</p>
+                </div>
+
+                <!-- Small Bento Item 2 -->
+                <div class="glass-card p-8 flex flex-col justify-center">
+                    <div class="text-[#D4AF37] mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Rapid Deployment</h3>
+                    <p class="text-sm text-gray-400">Modular precision for minimized site disruption.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glassmorphic Lead Gen Section -->
+        <section id="contact" class="py-24">
+            <div class="glass-card max-w-5xl mx-auto p-12 lg:p-20 text-center relative overflow-hidden">
+                <div class="absolute -top-24 -left-24 w-64 h-64 bg-[#D4AF37]/20 rounded-full blur-[80px]"></div>
+                <h2 class="text-4xl lg:text-5xl font-['Playfair_Display'] font-bold mb-6">Ready to elevate your structure?</h2>
+                <p class="text-gray-400 mb-10 max-w-xl mx-auto">Join the elite circle of property owners who prioritize engineering perfection and luxury aesthetics.</p>
+                <form class="flex flex-col md:flex-row gap-4 justify-center">
+                    <input type="email" placeholder="Enter your professional email" class="px-6 py-4 rounded-full bg-white/5 border border-white/10 focus:border-[#D4AF37] outline-none w-full md:w-96 transition-all" />
+                    <button class="px-8 py-4 bg-[#D4AF37] text-[#0F172A] font-bold rounded-full hover:bg-yellow-500 transition-colors">
+                        Request Consultation
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+    </style>
 </Layout>
